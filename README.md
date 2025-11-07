@@ -1,31 +1,37 @@
-# 🧠 Mind Maze
+# 🧠 Mind Maze (Java OOP Game)
 
-**Mind Maze** is a simple and fun Java OOP-based puzzle game where players solve random logic or math challenges to “defuse” traps and escape each level. The game tests problem-solving skills, quick thinking, and accuracy under pressure — making it both enjoyable and mentally stimulating.
+## 📌 Overview
+**Mind Maze** is a simple text-based puzzle game made in Java.  
+The player explores different rooms in a maze — some give rewards, others cause traps, and one leads to the exit.  
+It shows how **Object-Oriented Programming (OOP)** concepts like inheritance, polymorphism, and encapsulation work together in a fun way.
 
 ---
 
 ## 🎮 Gameplay
-In **Mind Maze**, players find themselves trapped in a mysterious maze filled with mental puzzles. Each stage presents a unique challenge that must be solved correctly to advance. Failure to solve the puzzle in time or with the correct answer will trigger a “virtual trap” — leading to game over.
-
-The puzzles vary from math equations to logic riddles, keeping players alert and engaged throughout their escape journey.
-
----
-
-## 💻 Features
-- 💡 **Object-Oriented Programming Design** – Uses abstraction, inheritance, and polymorphism for modular and reusable code.  
-- 🔀 **Randomized Challenges** – Every game session is different, offering unique puzzles each time.  
-- 🧩 **Multiple Puzzle Types** – Includes math-based and logic-based traps.  
-- 🎨 **Simple Text-Based Interface** – Easy to play directly in the console.  
-- ⚙️ **Replayable Gameplay** – Random puzzles ensure every attempt feels new and exciting.  
+- You start with 100 energy.  
+- Each room has a random event:
+  - 🧩 **Quiz Room:** Answer a question to gain or lose energy.  
+  - 💀 **Trap Room:** Lose some energy.  
+  - 💰 **Treasure Room:** Gain energy or score.  
+  - 🏁 **Exit Room:** Win the game!  
+- The game ends when your energy reaches 0 or you find the exit.
 
 ---
 
-## 🧩 Example Class Structure
-- `Bomb` – Abstract base class that defines common behavior for all puzzle traps.  
-- `MathBomb` – A subclass that presents math questions for players to solve.  
-- `LogicBomb` – A subclass that presents logic-based puzzles.  
-- `GameManager` – Manages game flow, user input, and victory/defeat conditions.  
-- `Main` – The entry point that starts the game.
+## ⚙️ OOP Concepts Used
+| Concept | Description |
+|----------|-------------|
+| **Encapsulation** | Player stats are private with getter/setter methods. |
+| **Inheritance** | All rooms extend from one base `Room` class. |
+| **Polymorphism** | Each room has its own version of `enterRoom()`. |
+| **Abstraction** | `Room` is an abstract class that defines structure for all rooms. |
+| **Exception Handling** | Handles wrong or invalid user inputs. |
 
-This structure ensures proper OOP principles such as **encapsulation**, **abstraction**, and **inheritance** are applied.
+---
 
+## 🧩 Main Classes
+- `Room` – Abstract class for all rooms.  
+- `QuizRoom`, `TrapRoom`, `TreasureRoom`, `ExitRoom` – Each has different effects.  
+- `Player` – Stores name, energy, and score.  
+- `Question` – Used in quiz rooms for questions and answers.  
+- `MazeGame` – Main class that runs the game.
