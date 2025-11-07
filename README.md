@@ -1,37 +1,70 @@
-# 🧠 Mind Maze (Java OOP Game)
+# 🧠 Mind Maze: An OOP-Based Puzzle Adventure Game in Java
 
-## 📌 Overview
-**Mind Maze** is a simple text-based puzzle game made in Java.  
-The player explores different rooms in a maze — some give rewards, others cause traps, and one leads to the exit.  
-It shows how **Object-Oriented Programming (OOP)** concepts like inheritance, polymorphism, and encapsulation work together in a fun way.
+## 📜 Overview
+**Mind Maze** is a text-based adventure game where players must escape a mysterious maze filled with quiz rooms, traps, and treasures.  
+Each decision affects your energy and score, testing your logic, memory, and luck.  
+The project demonstrates core **Object-Oriented Programming (OOP)** principles such as **inheritance**, **polymorphism**, **abstraction**, and **encapsulation**, along with **exception handling** and **Java Collections**.
 
 ---
 
 ## 🎮 Gameplay
-- You start with 100 energy.  
-- Each room has a random event:
-  - 🧩 **Quiz Room:** Answer a question to gain or lose energy.  
-  - 💀 **Trap Room:** Lose some energy.  
-  - 💰 **Treasure Room:** Gain energy or score.  
-  - 🏁 **Exit Room:** Win the game!  
-- The game ends when your energy reaches 0 or you find the exit.
+1. You begin with 100 energy points.  
+2. Navigate through randomly generated rooms:
+   - 🧩 **Quiz Room:** Answer questions correctly to gain or keep energy.  
+   - 💀 **Trap Room:** Lose energy when caught in a trap.  
+   - 💰 **Treasure Room:** Gain bonus energy or points.  
+   - 🏁 **Exit Room:** Escape the maze and win!  
+3. The game ends when:
+   - You reach the **Exit Room**, or  
+   - Your **energy** drops to zero.  
 
 ---
 
-## ⚙️ OOP Concepts Used
-| Concept | Description |
+## ⚙️ Technical Details
+
+| Feature | Description |
 |----------|-------------|
-| **Encapsulation** | Player stats are private with getter/setter methods. |
-| **Inheritance** | All rooms extend from one base `Room` class. |
-| **Polymorphism** | Each room has its own version of `enterRoom()`. |
-| **Abstraction** | `Room` is an abstract class that defines structure for all rooms. |
-| **Exception Handling** | Handles wrong or invalid user inputs. |
+| **Language** | Java |
+| **Concepts Used** | Encapsulation, Inheritance, Polymorphism, Abstraction |
+| **Additional Topics** | Exception Handling, Randomization, Arrays/ArrayList |
+| **Type** | Console-based Game |
+| **Input** | User text (via `Scanner`) |
+| **Output** | Console messages and interactions |
 
 ---
 
-## 🧩 Main Classes
-- `Room` – Abstract class for all rooms.  
-- `QuizRoom`, `TrapRoom`, `TreasureRoom`, `ExitRoom` – Each has different effects.  
-- `Player` – Stores name, energy, and score.  
-- `Question` – Used in quiz rooms for questions and answers.  
-- `MazeGame` – Main class that runs the game.
+## 🧩 Class Structure
+
+### 🏛️ `Room` *(Abstract Superclass)*
+- Represents a generic room in the maze.
+- Defines the abstract method `enterRoom(Player player)` that subclasses override.
+
+### 🧠 `QuizRoom`
+- Prompts the player with random quiz questions.
+- Rewards or penalizes energy based on correct or wrong answers.
+
+### 💀 `TrapRoom`
+- Simulates traps that reduce player energy randomly.
+
+### 💰 `TreasureRoom`
+- Grants bonus points or energy when found.
+
+### 🏁 `ExitRoom`
+- Ends the game when reached.
+
+### 🧍‍♂️ `Player`
+- Stores the player’s name, energy, and score.
+- Includes methods to modify stats and check if the player is still alive.
+
+### 🧩 `Question`
+- Helper class that holds question text and correct answers.
+- Used by the `QuizRoom` for random quizzes.
+
+### 🎮 `MazeGame`
+- Main controller class.
+- Handles the game loop, player input, room creation, and transitions.
+
+---
+
+## 🧠 Example Flow
+
