@@ -64,7 +64,3 @@ The project demonstrates core **Object-Oriented Programming (OOP)** principles s
 - Main controller class.
 - Handles the game loop, player input, room creation, and transitions.
 
----
-
-## 🧠 Example Flow
-
