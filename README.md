@@ -56,11 +56,7 @@ The project demonstrates core **Object-Oriented Programming (OOP)** principles s
 - Stores the player’s name, energy, and score.
 - Includes methods to modify stats and check if the player is still alive.
 
-### 🧩 `Question`
-- Helper class that holds question text and correct answers.
-- Used by the `QuizRoom` for random quizzes.
-
-### 🎮 `MazeGame`
+### 🎮 `MindMaze`
 - Main controller class.
 - Handles the game loop, player input, room creation, and transitions.
 
