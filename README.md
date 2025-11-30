@@ -2,10 +2,11 @@
 
 <p align="center">
 **CS-2101**<br>
-Tristan Allen Cabral<br> 
-Paul Dharren Alday<br> 
-Ericson Chester Lozada<br>
+**Tristan Allen Cabral**<br>
+**Paul Dharren Alday**<br>
+**Ericson Chester Lozada**
 </p>
+
 
 ## 📜 Overview
 **Mind Maze** is a text-based adventure game where players must escape a mysterious maze filled with quiz rooms, traps, and treasures.  
