@@ -1,6 +1,5 @@
 # 🧠 Mind Maze: An OOP-Based Puzzle Adventure Game in Java
 
-**Authors:** 
 Tristan Allen Cabral<br> 
 Paul Dharren Alday<br> 
 Ericson Chester Lozada<br>
