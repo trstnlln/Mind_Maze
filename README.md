@@ -6,7 +6,6 @@ Tristan Allen Cabral<br>
 Paul Dharren Alday<br> 
 Ericson Chester Lozada<br>
 </p>
----
 
 ## 📜 Overview
 **Mind Maze** is a text-based adventure game where players must escape a mysterious maze filled with quiz rooms, traps, and treasures.  
