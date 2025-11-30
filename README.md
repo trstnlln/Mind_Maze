@@ -1,9 +1,11 @@
 # 🧠 Mind Maze: An OOP-Based Puzzle Adventure Game in Java
 
+<p align="center">
+**CS-2101**<br>
 Tristan Allen Cabral<br> 
 Paul Dharren Alday<br> 
 Ericson Chester Lozada<br>
-
+</p>
 ---
 
 ## 📜 Overview
