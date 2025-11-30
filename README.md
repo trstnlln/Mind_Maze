@@ -1,5 +1,13 @@
 # 🧠 Mind Maze: An OOP-Based Puzzle Adventure Game in Java
 
+---
+
+Cabral, Tristan Allen C.
+Alday, Paul Dharren J.
+Lozada, Ericson Chester R.
+
+---
+
 ## 📜 Overview
 **Mind Maze** is a text-based adventure game where players must escape a mysterious maze filled with quiz rooms, traps, and treasures.  
 Each decision affects your energy and score, testing your logic, memory, and luck.  
